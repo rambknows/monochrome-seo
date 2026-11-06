@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochrome SEO Pvt Ltd | SEO Mastery Course</title>
+    <meta name="description" content="Learn SEO with Monochrome SEO Pvt Ltd in Lalitpur, Nepal. Build practical SEO skills and prepare for international freelancing with expert guidance.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        :root {
+            --primary: #172554;
+            --secondary: #2563eb;
+            --accent: #38bdf8;
+            --light: #eff6ff;
+            --dark: #0f172a;
+            --white: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Navigation */
+
+        header {
+            background: var(--white);
+            padding: 15px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -1px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #334155;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        .nav-button {
+            background: var(--secondary);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        /* Hero Section */
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #172554, #1d4ed8);
+            color: white;
+            padding: 80px 7%;
+            text-align: center;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-width: 1050px;
+            height: auto;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 18px;
+            margin: 0 auto 35px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .hero-label {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(36px, 6vw, 65px);
+            line-height: 1.15;
+            max-width: 900px;
+            margin: auto;
+            font-weight: 800;
+        }
+
+        .hero h1 span {
+            color: #7dd3fc;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 25px auto;
+            font-size: 18px;
+            color: #dbeafe;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #38bdf8;
+            color: #082f49;
+        }
+
+        .btn-primary:hover {
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* General Sections */
+
+        section {
+            padding: 85px 7%;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .section-heading small {
+            color: var(--secondary);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            color: var(--primary);
+            margin: 10px 0;
+        }
+
+        .section-heading p {
+            color: #64748b;
+        }
+
+        /* Services */
+
+        .services {
+            background: white;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            padding: 25px 28px 35px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            transition: 0.3s;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(37,99,235,0.1);
+            border-color: #93c5fd;
+        }
+
+        .service-image {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .service-icon {
+            font-size: 38px;
+            margin-bottom: 18px;
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        /* About */
+
+        .about {
+            background: var(--light);
+        }
+
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+        }
+
+        .about-content small {
+            color: var(--secondary);
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .about-content h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            line-height: 1.25;
+            color: var(--primary);
+            margin: 15px 0 20px;
+        }
+
+        .about-content p {
+            color: #475569;
+            margin-bottom: 18px;
+        }
+
+        .about-highlight {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            border-left: 5px solid var(--secondary);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .about-highlight .icon {
+            font-size: 45px;
+        }
+
+        .about-highlight h3 {
+            color: var(--primary);
+            margin: 15px 0;
+            font-size: 24px;
+        }
+
+        .about-highlight p {
+            color: #64748b;
+        }
+
+        /* Trainer Section */
+
+        .trainer-section {
+            background: white;
+        }
+
+        .trainer-container {
+            max-width: 850px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            align-items: center;
+            gap: 40px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .trainer-image {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .trainer-info small {
+            color: var(--secondary);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .trainer-info h3 {
+            color: var(--primary);
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .trainer-info p {
+            color: #64748b;
+        }
+
+        .trainer-role {
+            display: inline-block;
+            margin-top: 15px;
+            background: #dbeafe;
+            color: #1d4ed8;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Students Section */
+
+        .students {
+            background: var(--light);
+        }
+
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .student-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .student-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(37,99,235,0.12);
+        }
+
+        .student-image {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        .student-card h3 {
+            color: var(--primary);
+            font-size: 19px;
+            padding: 18px 10px;
+        }
+
+        /* Why Choose Us */
+
+        .why-us {
+            background: var(--dark);
+            color: white;
+        }
+
+        .why-us .section-heading h2 {
+            color: white;
+        }
+
+        .why-us .section-heading p {
+            color: #cbd5e1;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 25px;
+        }
+
+        .feature {
+            padding: 30px 20px;
+            text-align: center;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 14px;
+        }
+
+        .feature .feature-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 45px;
+            text-align: center;
+        }
+
+        .stat h3 {
+            color: #7dd3fc;
+            font-size: 38px;
+        }
+
+        .stat p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .contact-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .contact-card .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .contact-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: #64748b;
+            margin-bottom: 18px;
+            font-size: 14px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--secondary);
+            color: white;
+            padding: 11px 20px;
+            border-radius: 7px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .contact-link:hover {
+            background: var(--primary);
+        }
+
+        /* CTA */
+
+        .cta {
+            text-align: center;
+            background: linear-gradient(135deg, #1d4ed8, #172554);
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: clamp(28px, 4vw, 40px);
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #dbeafe;
+            max-width: 650px;
+            margin: 0 auto 25px;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #020617;
+            color: #94a3b8;
+            padding: 30px 7%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer strong {
+            color: white;
+        }
+
+        /* Mobile Responsive */
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 5%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px 18px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .nav-button {
+                padding: 8px 13px;
+            }
+
+            .hero {
+                padding: 60px 6%;
+            }
+
+            .hero-image {
+                max-height: 300px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 65px 6%;
+            }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .about-image {
+                height: auto;
+                max-height: 380px;
+            }
+
+            .about-highlight {
+                padding: 25px;
+            }
+
+            .service-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trainer-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+                padding: 22px;
+            }
+
+            .trainer-image {
+                height: auto;
+                max-height: 380px;
+            }
+
+            .student-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .student-image {
+                height: 300px;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 768px) {
+            .student-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 380px) {
+            .logo {
+                font-size: 19px;
+            }
+
+            nav {
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <a href="#home" class="logo">MONOCHROME <span>SEO</span></a>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Courses</a>
+            <a href="#about">About</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#contact" class="nav-button">Contact Us</a>
+        </nav>
+    </header>
+
+    <!-- Homepage / Hero -->
+    <section class="hero" id="home">
+
+        <img
+            src="images/banner-1.jpg"
+            alt="SEO trainer teaching students in a classroom"
+            class="hero-image"
+            fetchpriority="high"
+        >
+
+        <div class="hero-label">🚀 Learn SEO. Build Your Future.</div>
+
+        <h1>
+            Master SEO Skills.<br>
+            <span>Build Your Global Career.</span>
+        </h1>
+
+        <p>
+            Welcome to Monochrome SEO Pvt Ltd, where we help you develop practical SEO skills and prepare for international freelancing opportunities through our SEO Mastery Course.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#services" class="btn btn-primary">Explore Our Course →</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+
+        <div class="section-heading">
+            <small>What We Offer</small>
+            <h2>Learn SEO. Unlock Opportunities.</h2>
+            <p>
+                Develop valuable digital skills with our SEO-focused learning program.
+            </p>
+        </div>
+
+        <div class="service-grid">
+
+            <div class="service-card">
+
+                <img
+                    src="images/course.jpg"
+                    alt="Student learning SEO on a computer"
+                    class="service-image"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <div class="service-icon">🎓</div>
+                <h3>SEO Mastery Course</h3>
+                <p>
+                    Learn SEO from basic to advanced levels through structured learning and practical guidance.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>Practical SEO Skills</h3>
+                <p>
+                    Understand keyword research, on-page SEO, technical SEO, content optimization and more.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌍</div>
+                <h3>International Freelancing Preparation</h3>
+                <p>
+                    Develop SEO knowledge and prepare to explore freelancing opportunities in the international market.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- About Us -->
+    <section class="about" id="about">
+
+        <div class="about-container">
+
+            <div class="about-content">
+
+                <img
+                    src="images/banner-2.jpg"
+                    alt="Computer screen displaying digital marketing content"
+                    class="about-image"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <small>About Our Company</small>
+
+                <h2>Helping People Build Skills for a Digital Future.</h2>
+
+                <p>
+                    Monochrome SEO Pvt Ltd is an SEO-focused learning and training company based in Lalitpur, Nepal.
+                </p>
+
+                <p>
+                    Our goal is to make SEO learning practical, accessible and career-focused. We believe that the right skills, consistent learning and proper guidance can help people explore opportunities beyond traditional career paths.
+                </p>
+
+                <p>
+                    Through our SEO Mastery Course, we prepare learners with knowledge and practical skills to pursue opportunities in the global digital marketplace.
+                </p>
+            </div>
+
+            <div class="about-highlight">
+                <div class="icon">💡</div>
+
+                <h3>Skills Can Open New Doors.</h3>
+
+                <p>
+                    You do not need to know everything before you start. Learn the fundamentals, build practical skills and take one step at a time towards your goals.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Trainer Section -->
+    <section class="trainer-section" id="trainer">
+
+        <div class="section-heading">
+            <small>Meet Your Trainer</small>
+            <h2>Learn from an SEO Expert.</h2>
+            <p>
+                Get guidance from an experienced SEO professional.
+            </p>
+        </div>
+
+        <div class="trainer-container">
+
+            <img
+                src="images/trainer.jpg"
+                alt="Rambabu Thapa, SEO Expert and Trainer"
+                class="trainer-image"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="trainer-info">
+                <small>SEO Expert & Trainer</small>
+                <h3>Rambabu Thapa</h3>
+                <p>
+                    Learn SEO with practical guidance and industry experience. Develop your knowledge, strengthen your skills and prepare for opportunities in the global digital marketplace.
+                </p>
+                <span class="trainer-role">SEO Expert & Trainer</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Students Section -->
+    <section class="students" id="students">
+
+        <div class="section-heading">
+            <small>Our Students</small>
+            <h2>Meet Our Learners.</h2>
+            <p>
+                A look at some of the students from our learning community.
+            </p>
+        </div>
+
+        <div class="student-grid">
+
+            <div class="student-card">
+                <img
+                    src="images/students/student1.jpg"
+                    alt="Student Hari Karki"
+                    class="student-image"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <h3>Hari Karki</h3>
+            </div>
+
+            <div class="student-card">
+                <img
+                    src="images/students/student2.jpg"
+                    alt="Student Gita Shrestha"
+                    class="student-image"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <h3>Gita Shrestha</h3>
+            </div>
+
+            <div class="student-card">
+                <img
+                    src="images/students/student3.jpg"
+                    alt="Student Mohan Manandhar"
+                    class="student-image"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <h3>Mohan Manandhar</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+
+        <div class="section-heading">
+            <small>Why Choose Us</small>
+
+            <h2>Your Learning. Our Experience. Your Growth.</h2>
+
+            <p>
+                Learn with an experienced SEO training team focused on practical knowledge and career preparation.
+            </p>
+        </div>
+
+        <div class="features-grid">
+
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <h3>15 Years of SEO Experience</h3>
+                <p>
+                    Learn from extensive experience in the SEO industry.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🌐</div>
+                <h3>Global Career Preparation</h3>
+                <p>
+                    Build SEO skills and prepare for international freelancing opportunities.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💼</div>
+                <h3>Job Success Focus</h3>
+                <p>
+                    Learn with a focus on career development and professional success.
+                </p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Practical Learning</h3>
+                <p>
+                    Develop skills through structured SEO learning and practical knowledge.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>15+</h3>
+                <p>Years of SEO Experience</p>
+            </div>
+
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Students Trained</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Job Success Rate</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+
+        <div class="section-heading">
+            <small>Get in Touch</small>
+
+            <h2>Let's Start Your SEO Journey.</h2>
+
+            <p>
+                Have questions about our SEO Mastery Course? Contact our team. We would love to hear from you.
+            </p>
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                <div class="icon">📍</div>
+                <h3>Our Location</h3>
+                <p>Lalitpur, Nepal</p>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">📞</div>
+                <h3>Call Us</h3>
+                <p>Speak with our team for course inquiries.</p>
+                <a href="tel:015914543" class="contact-link">
+                    Call Now
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <div class="icon">💬</div>
+                <h3>WhatsApp Us</h3>
+                <p>Connect with us for more information.</p>
+                <a href="https://wa.me/97715914543" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    WhatsApp Now
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+
+        <h2>Ready to Learn SEO?</h2>
+
+        <p>
+            Take the first step towards building practical digital marketing skills and preparing for global opportunities.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            Contact Our Team →
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © <span id="year">2026</span>
+            <strong>Monochrome SEO Pvt Ltd.</strong>
+            All Rights Reserved.
+        </p>
+
+        <p style="margin-top: 8px;">
+            Lalitpur, Nepal | Learn SEO. Grow Globally.
+        </p>
+
+    </footer>
+
+</body>
+</html>
